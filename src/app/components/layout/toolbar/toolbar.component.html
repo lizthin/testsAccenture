@@ -1,0 +1,39 @@
+<ng-container>
+  <mat-menu #appMenu="matMenu" yPosition="above">
+    <ng-template [ngTemplateOutlet]="menu"></ng-template>
+  </mat-menu>
+</ng-container>
+<mat-toolbar color="primary" class="mat-elevation-z6 header">
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="appMenu"
+      fxShow.xs="true"
+      fxShow.sm="false"
+      fxShow.md="false"
+      fxShow.lg="false"
+      fxShow.xl="false"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <div
+      fxShow.xs="false"
+      fxShow.sm="true"
+      fxShow.md="true"
+      fxShow.lg="true"
+      fxShow.xl="true"
+    >
+      <ng-template [ngTemplateOutlet]="menu"></ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<ng-template #menu>
+  <button mat-button *ngFor="let options of objectMenu">
+    <mat-icon
+      class="example-icon"
+      aria-hidden="false"
+      aria-label="Example search icon"
+      >{{ options.icon }} </mat-icon
+    >{{ options.name }}
+  </button>
+</ng-template>
