@@ -1,2 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  background-color: #faedca !important;
+}
+.mat-toolbar.mat-primary {
+  background: #fe5d26;
+  color: #fff;
+}
+
+.mat-fab.mat-accent,
+.mat-flat-button.mat-accent,
+.mat-mini-fab.mat-accent,
+.mat-raised-button.mat-accent {
+  background-color: #7ebc89;
+}
+
+.mat-focused .mat-form-field-label {
+  color: #7ebc89 !important;
+}
+
+.mat-input-element {
+    caret-color:  #7ebc89 !important;
+}
+input:focus{
+    outline-color: #7ebc89 !important;
+}
+
+.mat-snack-bar-container {
+    color: rgba(0,0,0) !important;
+    background: #c1dbb3;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+/* .mat-button-wrapper{
+    color: #fe5d26;
+} */
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #7ebc89;
+}
+
+.mat-fab.mat-warn, .mat-flat-button.mat-warn, .mat-mini-fab.mat-warn, .mat-raised-button.mat-warn {
+    background-color: #f2c278;
+}
+
+.mat-simple-snackbar-action>.mat-button>.mat-button-wrapper{
+    color: #fe5d26
+}

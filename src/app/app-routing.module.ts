@@ -8,7 +8,7 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/accenture/search',
+    redirectTo: '/accenture/record',
     pathMatch: 'full',
   },
 ];

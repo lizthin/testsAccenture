@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatNativeDateModule } from "@angular/material/core";
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { MatNativeDateModule } from "@angular/material/core";
     MatSnackBarModule,
     MatProgressSpinnerModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   declarations: [CustomerRecordComponent, CustomerSearchComponent]
 })
