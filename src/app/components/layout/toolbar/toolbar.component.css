@@ -1,6 +1,11 @@
 .example-icon {
   padding: 0 14px;
 }
+*,
+::after,
+::before {
+  box-sizing: content-box !important;
+}
 
 .example-spacer {
   flex: 1 1 auto;

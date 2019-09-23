@@ -28,7 +28,11 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <ng-template #menu>
-  <button mat-button *ngFor="let options of objectMenu">
+  <button
+    mat-button
+    *ngFor="let options of objectMenu"
+    [routerLink]="[options.route]"
+  >
     <mat-icon
       class="example-icon"
       aria-hidden="false"

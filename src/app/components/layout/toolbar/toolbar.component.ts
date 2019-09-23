@@ -13,16 +13,20 @@ export class ToolbarComponent implements OnInit {
     this.objectMenu = [
       {
         name: "Creación de clientes",
-        route: "",
+        route: "accenture/record",
         icon: "account_circle"
       },
       {
         name: "Busqueda de clientes",
-        route: "",
+        route: "accenture/search",
         icon: "search"
       }
     ];
   }
 
   ngOnInit() {}
+
+  routing(object){
+
+  }
 }
